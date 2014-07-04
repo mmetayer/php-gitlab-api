@@ -12,4 +12,11 @@ class ProjectNamespaces extends AbstractApi
         ));
     }
 
+    public function search($query)
+    {
+        return $this->get('namespaces', array(
+            'search' => $query,
+        ));
+    }
+
 }
